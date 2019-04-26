@@ -1,0 +1,127 @@
+.weight {
+	position: relative;
+	z-index: 1;
+}
+
+.weight-form {
+	background: linear-gradient(to top, $prim_form_color, $sec_form_color);
+	border-radius: 3px;
+	padding: 50px;
+	margin: 40px 0 45px;
+}
+
+.weight-form__inner {
+	margin-left: 225px;
+}
+
+
+.weight-form__btn {
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Intro Alt", Arial, sans-serif;
+	font-size: 22px;
+	line-height: 50px;
+  height: 54px;
+  min-width: 250px;
+  text-align: center;
+  outline: none;
+  transition: all .2s;
+  
+  &:hover,
+  &:focus {
+		background: #fff;
+		color: $prim_form_color;
+  }
+}
+
+.weight-form__btn-wrap {
+	text-align: center;
+}
+
+.weight-form__row {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.weight-form__field {
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 0 0 1px $field_shadow_color inset;
+  background: $field_bg_color;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+  line-height: 42px;
+  height: 42px;
+  width: 100%;
+  padding: 0;
+  transition: all .2s;
+
+  -moz-appearance: textfield;
+  
+  &::-webkit-outer-spin-button,  
+  &::-webkit-inner-spin-button {
+  	-webkit-appearance: none;
+  }
+  
+  &:hover,
+  &:focus {
+  	 background: $prim_form_color;
+  }
+}
+
+.weight-form__field-wrap {
+	display: inline-block;
+	position: relative;
+	margin-right: 117px;
+	width: 80px;
+}
+
+.weight-form__text {
+	color: #fff;
+	font-family: "Intro", Arial, sans-serif;
+	font-size: 18px;
+  padding: 10px 13px;	
+	position: absolute;
+	right: 100%;
+	white-space: nowrap;
+}
+
+.weight-form__label-btn {
+	background: transparent;	
+	border: 2px solid $btn_border_color;
+	border-radius: 30px;
+	color: #fff;
+	cursor: pointer;
+	line-height: 36px;
+	height: 36px;
+	width: 176px;
+	font-size: 14px;	
+	font-weight: 600;
+	text-align: center;
+	display: inline-block;
+	margin-right: 16px;
+	transition: all .2s;
+	
+	&:hover,
+	&:focus {
+		background: $btn_border_color;
+	}
+}
+
+.weight-form__radio {
+	appearance: none;
+	position: absolute;
+}
+
+.weight-form__radio:checked + .weight-form__label-btn {
+	background: #fff;
+	color: $prim_form_color;
+	border-color: #fff;
+}

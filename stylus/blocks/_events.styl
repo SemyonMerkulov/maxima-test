@@ -1,0 +1,113 @@
+.events {
+	background: url(../../img/events__bg.png) no-repeat center bottom 20px;
+	min-height: 417px;
+  padding-top: 45px;
+  padding-bottom: 20px;
+	position: relative;	
+	overflow: hidden;
+}
+
+.events__col {
+	background: url(../../img/events__col.png) no-repeat;
+	height: 288px;
+	width: 245px;
+	position: relative;	
+	
+	&:nth-child(1) {
+		margin-left: -15px;
+		margin-top: 50px;
+	}
+	
+	&:nth-child(2) {
+		margin-left: 10px;
+		margin-top: 25px;
+	}
+}
+
+.events__container {
+	position: relative;
+	margin-top: 20px;
+}
+
+.events__date,
+.events__desc {
+	color: #fff;
+}
+
+.events__date {
+	font-family: "Intro Alt", Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 15px;
+	width: 54px;
+  transform: skewY(-10deg);
+}
+
+.events__desc {
+	font-family: "Intro", Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 230px;
+  min-height: 55px;
+  margin-left: 15px;
+  padding: 0px 10px;
+	transform: skewY(-10deg);
+	
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.events__skier {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+
+	z-index: 1;
+}
+
+.events__skier-inner {
+	position: relative;
+	height: 200px;
+	width: 980px;
+	margin: auto;
+}
+
+.events__skier-figure {
+	position: absolute;
+	background: url(../../img/skier.png) no-repeat center bottom / contain;
+	display: block;
+	width: 192px;  
+  height: 160px;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 86px;
+	left: 1500px;
+  animation: skier 8s linear infinite;
+
+}
+
+@keyframes skier {
+  0% {
+    left: 1500px;
+    bottom: 86px;
+  }
+  50% {
+    left: -1500px;
+    bottom: -86px;
+  }
+  100% {
+    left: -1500px;
+    bottom: -86px;
+  }
+}

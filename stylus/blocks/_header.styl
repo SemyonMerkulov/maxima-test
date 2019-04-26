@@ -1,0 +1,95 @@
+.header {
+	font-family: "intro", Arial, sans-serif;
+}
+
+.header-top {
+	background: $prim_color;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+
+.header-bottom {
+	margin-top: 50px;
+	padding: 38px 0 24px;
+}
+
+.header__col {
+	display: flex;
+}
+
+.header__col_center {
+	justify-content: center;
+}
+
+.header__schedule,
+.header__backcall {
+	background: $sec_color;
+	color: #fff;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	letter-spacing: .4px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.header__backcall:before {
+	content: '';
+	background: url(../../img/spritesheet.png) no-repeat;
+	background-position: -66px -6px;
+	display: inline-block;
+	height: 34px;
+	width: 34px;
+	vertical-align: middle;
+    margin: 0 13px 4px 0px;
+} 
+
+.header__schedule {
+	padding: 0 20px 0 15px;
+}
+
+.header__schedule:before {
+	content: '';
+	background: url(../../img/spritesheet.png) no-repeat;
+	background-position: -112px -5px;
+	display: inline-block;
+	height: 36px;
+	width: 34px;
+	vertical-align: middle;
+    margin: 0 8px 10px 2px;
+} 
+
+.header__phone {
+	color: #fff;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: all .2s;
+	& + & {
+		margin-left: 58px;
+	}
+	
+	&:hover,
+	&:focus {
+		.header__phone-sm {
+			color: #fff;
+		}
+	}
+}
+
+.header__phone-sm {
+	color: #ffa3b9;
+	font-size: 14px;
+	font-weight: 400;
+}

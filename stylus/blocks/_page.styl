@@ -1,0 +1,18 @@
+.page {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 12px;
+	color: $main_font_color;
+	min-height: 100%;
+	position: relative;
+	
+	&:after {
+		content: '';
+		background-image: $page_btm_gradient;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 550px;
+		width: 100%;
+	}
+}
