@@ -1,4 +1,4 @@
-# creonit_test_part1
+# maxima-test
 
 ## Установить пакеты
 ```
